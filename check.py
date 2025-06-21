@@ -53,11 +53,11 @@ def get_biggest_fib(seconds, print_every_number=True, log_filename=""):
                 writer = csv.writer(file)
                 writer.writerow([n, scientific_notation(value), time_taken])
 
-        # check time
-        if time_taken > seconds:
-            print("========================")
-            print(f"Final answer: {n-1}th number {scientific_notation(value)}")
-            break
+        # # check time
+        # if time_taken > seconds:
+        #     print("========================")
+        #     print(f"Final answer: {n-1}th number {scientific_notation(value)}")
+        #     break
 
 if __name__ == "__main__":
     get_biggest_fib(1, log_filename="logs", print_every_number=False)
