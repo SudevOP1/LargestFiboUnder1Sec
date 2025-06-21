@@ -56,7 +56,7 @@ def get_biggest_fib(seconds, print_every_number=True, log_filename=""):
         # check time
         if time_taken > seconds:
             print("========================")
-            print(f"Final answer: {n-1}th number {value}")
+            print(f"Final answer: {n-1}th number {scientific_notation(value)}")
             break
 
 if __name__ == "__main__":
